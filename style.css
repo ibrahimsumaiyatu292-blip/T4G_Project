@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800;900&display=swap');
 
 :root {
-  /* Vibrant Pastel Palette */
-  --primary: #FF758F; /* Vibrant Pink/Coral */
+  
+  --primary: #FF758F; 
   --primary-light: #FF9EAB;
-  --secondary: #5BC0BE; /* Vibrant Teal/Aquamarine */
+  --secondary: #5BC0BE; 
   --secondary-light: #8FE3E1;
-  --accent: #FFD166; /* Sunshine Yellow */
+  --accent: #FFD166; 
   --accent-light: #FFE399;
   
-  /* Backgrounds */
+  
   --bg-color: #FFFFFF;
   --bg-gradient: linear-gradient(135deg, #FFFFFF 0%, #FFF0F5 100%);
   --white: #ffffff;
@@ -17,7 +17,7 @@
   --gray: #8D99AE;
   --light-gray: #EDF2F4;
   
-  /* Effects */
+  
   --shadow-sm: 0 4px 6px rgba(255, 117, 143, 0.1);
   --shadow-md: 0 10px 25px rgba(255, 117, 143, 0.15);
   --shadow-lg: 0 20px 40px rgba(91, 192, 190, 0.2);
@@ -25,7 +25,7 @@
   --radius-md: 24px;
   --radius-lg: 40px;
   
-  /* Glassmorphism */
+  
   --glass-bg: rgba(255, 255, 255, 0.85);
   --glass-border: rgba(255, 255, 255, 0.5);
   --glass-shadow: 0 8px 32px 0 rgba(255, 117, 143, 0.15);
@@ -49,9 +49,7 @@ a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { max-width: 100%; display: block; object-fit: cover; }
 
-/* -------------------------------------
-   Header / Navbar
---------------------------------------*/
+
 header {
   position: fixed;
   top: 0;
@@ -175,7 +173,7 @@ nav {
   box-shadow: var(--shadow-lg);
 }
 
-/* Hamburger */
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -183,9 +181,7 @@ nav {
   color: var(--dark);
 }
 
-/* -------------------------------------
-   Hero Section & Slideshow
---------------------------------------*/
+
 .hero {
   position: relative;
   width: 100%;
@@ -228,7 +224,7 @@ nav {
   opacity: 1;
 }
 
-/* Zoom effect on active slide */
+
 @keyframes kenburns {
   0% { transform: scale(1); }
   100% { transform: scale(1.1); }
@@ -283,9 +279,7 @@ nav {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* -------------------------------------
-   Container & Typography Utilities
---------------------------------------*/
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -313,9 +307,7 @@ nav {
   font-size: 1.1rem;
 }
 
-/* -------------------------------------
-   Product Grid (Reusable)
---------------------------------------*/
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -400,9 +392,7 @@ nav {
   margin-bottom: 1.2rem;
 }
 
-/* -------------------------------------
-   About Grid (Home & About Page)
---------------------------------------*/
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -463,14 +453,12 @@ nav {
   border-radius: 50%;
 }
 
-/* -------------------------------------
-   Forms (Login, Signup, Contact, Order)
---------------------------------------*/
+
 .auth-container, .contact-container, .order-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 80px); /* offset header */
+  min-height: calc(100vh - 80px); 
   padding: 8rem 2rem 4rem;
 }
 
@@ -567,9 +555,7 @@ nav {
   margin: 0 auto;
 }
 
-/* -------------------------------------
-   Footer
---------------------------------------*/
+
 footer {
   background: var(--dark);
   color: var(--white);
@@ -638,9 +624,7 @@ footer {
   color: var(--gray);
 }
 
-/* -------------------------------------
-   Media Queries
---------------------------------------*/
+
 @media (max-width: 900px) {
   .about-grid, .form-wrapper {
     grid-template-columns: 1fr;
@@ -668,9 +652,7 @@ footer {
   .hamburger { display: block; }
 }
 
-/* -------------------------------------
-   WhatsApp Floating Widget
---------------------------------------*/
+
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -694,3 +676,4 @@ footer {
   box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
   color: #FFF;
 }
+
