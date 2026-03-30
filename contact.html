@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | NurturaNest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: var(--bg-color);">
+
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-baby-carriage"></i> NurturaNest
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn btn-login">Login</a>
+                <a href="signup.html" class="btn btn-signup">Sign Up</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contact-container" style="padding-top: 6rem;">
+        <div class="form-wrapper">
+            <div class="form-image" style="background-image: url('images/babies.jpg');"></div>
+            <div class="form-content">
+                <h2>We'd <span>Love</span> to Hear from You!</h2>
+                <p>Have questions, or just want to tell us how much your little one loved their new gift? Drop us a line.</p>
+                
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Let's get acquainted..." required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Where should we reach you?" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Share your wonderful thoughts..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem;">
+                        Send Message <i class="fa-solid fa-paper-plane" style="margin-left: 0.5rem;"></i>
+                    </button>
+                </form>
+
+                <div style="margin-top: 2rem; border-top: 1px solid var(--light-gray); padding-top: 2rem;">
+                    <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot" style="color: var(--primary); margin-right: 0.5rem;"></i> <strong>Headquarters:</strong> Awoshie - Accra</p>
+                    <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-phone" style="color: var(--secondary); margin-right: 0.5rem;"></i> <strong>Phone:</strong> 0537479080</p>
+                    <p><i class="fa-solid fa-envelope" style="color: var(--accent); margin-right: 0.5rem;"></i> <strong>Email:</strong> ibrahimsumaiyatu292@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 style="color: var(--white);"><i class="fa-solid fa-baby-carriage" style="color: var(--primary);"></i> NurturaNest</h3>
+                <p>Bringing you the most beautiful and outstanding mother & baby care products. Built with love and affection.</p>
+                <div class="socials">
+                    <a href="https://wa.me/233537479080"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="order.html">Order Status</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="products.html#baby-care-kits">Baby Care Kits</a></li>
+                    <li><a href="products.html#feeding-bath">Feeding & Bath</a></li>
+                    <li><a href="products.html#clothes-shoes">Clothes & Shoes</a></li>
+                    <li><a href="products.html#nursery-beds">Nursery Beds</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NurturaNest Mother & Baby Care. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

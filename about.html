@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | NurturaNest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-baby-carriage"></i> NurturaNest
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn btn-login">Login</a>
+                <a href="signup.html" class="btn btn-signup">Sign Up</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="height: 60vh; min-height: 400px; display: flex; align-items: center; justify-content: center; background: url('images/mama baby.jpg') center/cover; position: relative; margin-top: 0;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,117,143,0.3);"></div>
+        <div class="hero-content" style="text-align: center; z-index: 10;">
+            <h1 style="font-size: 3.5rem;">Our Story</h1>
+            <p style="margin: 0 auto;">Nurturing life's most beautiful journey</p>
+        </div>
+    </section>
+
+    <!-- Story Content -->
+    <section class="container" style="padding-top: 4rem;">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>A Mother's Love,<br><span>Wrapped in Care</span></h2>
+                <p>NurturaNest was founded with a simple, yet profound realization: there is nothing more pure and delicate than the bond between a mother and her baby. We set out on a beautiful mission to provide essential, high-quality, and completely safe baby care products that parents can trust with all their heart.</p>
+                <p>Every single product in our store is carefully handpicked, rigorously tested, and wrapped with love to ensure your little superstar gets nothing but the very best.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="products.html" class="btn btn-secondary">Explore Our Care Kit <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="images/mother and baby.jpg" alt="Mother holding baby warmly">
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section style="background: var(--light-gray); padding: 5rem 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet The <span>Nurtura Family</span></h2>
+                <p>The passionate souls behind our heartwarming service.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; text-align: center;">
+                <div class="product-card" style="padding: 2rem;">
+                    <img src="images/sumaiya ceo.jpg" alt="Sumaiya CEO" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; border: 4px solid var(--primary-light);">
+                    <h3 style="color: var(--dark); margin-bottom: 0.5rem;">Sumaiya Ibrahim</h3>
+                    <p style="color: var(--primary); font-weight: 700; margin-bottom: 1rem;">Founder & CEO</p>
+                </div>
+                
+                <div class="product-card" style="padding: 2rem;">
+                    <img src="images/Christiana Adjei.jpg" alt="Christiana" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; border: 4px solid var(--secondary-light);">
+                    <h3 style="color: var(--dark); margin-bottom: 0.5rem;">Christiana Adjei</h3>
+                    <p style="color: var(--secondary); font-weight: 700; margin-bottom: 1rem;">Head of Operations</p>
+                </div>
+
+                <div class="product-card" style="padding: 2rem;">
+                    <img src="images/fatima Iddrisu.jpg" alt="Fatima" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; border: 4px solid var(--accent);">
+                    <h3 style="color: var(--dark); margin-bottom: 0.5rem;">Fatima Iddrisu</h3>
+                    <p style="color: var(--accent); font-weight: 700; margin-bottom: 1rem;">Product Quality Manager</p>
+                </div>
+
+                <div class="product-card" style="padding: 2rem;">
+                    <img src="images/prince 1.jpg" alt="Karim" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; border: 4px solid #b2abf2;">
+                    <h3 style="color: var(--dark); margin-bottom: 0.5rem;">Karim Abdullah</h3>
+                    <p style="color: #b2abf2; font-weight: 700; margin-bottom: 1rem;">Customer Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 style="color: var(--white);"><i class="fa-solid fa-baby-carriage" style="color: var(--primary);"></i> NurturaNest</h3>
+                <p>Bringing you the most beautiful and outstanding mother & baby care products. Built with love and affection.</p>
+                <div class="socials">
+                    <a href="https://wa.me/233537479080"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="order.html">Order Status</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="products.html#baby-care-kits">Baby Care Kits</a></li>
+                    <li><a href="products.html#feeding-bath">Feeding & Bath</a></li>
+                    <li><a href="products.html#clothes-shoes">Clothes & Shoes</a></li>
+                    <li><a href="products.html#nursery-beds">Nursery Beds</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NurturaNest Mother & Baby Care. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

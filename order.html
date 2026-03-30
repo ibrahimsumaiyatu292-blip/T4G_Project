@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout | NurturaNest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: var(--bg-color);">
+
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-baby-carriage"></i> NurturaNest
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="order.html" class="active">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn btn-login">Login</a>
+                <a href="signup.html" class="btn btn-signup">Sign Up</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="order-container">
+        <div class="full-form-wrapper">
+            <div class="section-title" style="margin-bottom: 2rem;">
+                <h2>Secure <span>Checkout</span></h2>
+                <p>Complete your order securely and fast.</p>
+            </div>
+
+            <form action="#" onsubmit="event.preventDefault(); alert('Order placed successfully! Redirecting...'); window.location.href='index.html';">
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <!-- Shipping Info -->
+                    <div>
+                        <h3 style="margin-bottom: 1rem; color: var(--primary);"><i class="fa-solid fa-truck"></i> Shipping Details</h3>
+                        
+                        <div class="input-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Street Address</label>
+                            <input type="text" placeholder="123 Mothercare Blvd." required>
+                        </div>
+                        <div style="display: flex; gap: 1rem;">
+                            <div class="input-group" style="flex: 1;">
+                                <label>City</label>
+                                <input type="text" placeholder="City" required>
+                            </div>
+                            <div class="input-group" style="flex: 1;">
+                                <label>Zip Code</label>
+                                <input type="text" placeholder="00000" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Payment Info -->
+                    <div>
+                        <h3 style="margin-bottom: 1rem; color: var(--secondary);"><i class="fa-solid fa-credit-card"></i> Payment Information</h3>
+                        
+                        <div class="input-group">
+                            <label>Name on Card</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Card Number</label>
+                            <input type="text" placeholder="1111-2222-3333-4444" required>
+                        </div>
+                        <div style="display: flex; gap: 1rem;">
+                            <div class="input-group" style="flex: 1;">
+                                <label>Exp Month/Year</label>
+                                <input type="text" placeholder="MM/YY" required>
+                            </div>
+                            <div class="input-group" style="flex: 1;">
+                                <label>CVV</label>
+                                <input type="text" placeholder="123" required>
+                            </div>
+                        </div>
+
+                        <div style="background: var(--light-gray); padding: 1.5rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem;">
+                            <h4 style="margin-bottom: 0.5rem; display: flex; justify-content: space-between;"><span>Items Total:</span> <span>GH₵0.00</span></h4>
+                            <h4 style="margin-bottom: 0.5rem; display: flex; justify-content: space-between;"><span>Shipping:</span> <span>GH₵0.00</span></h4>
+                            <hr style="border: none; border-top: 1px solid var(--gray); margin: 0.5rem 0;">
+                            <h3 style="display: flex; justify-content: space-between; color: var(--primary);"><span>Total:</span> <span>GH₵0.00</span></h3>
+                            <p style="font-size: 0.8rem; color: var(--gray); margin-top: 0.5rem;">(Note: This is a demo checkout form, actual cart dynamically loads products.)</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-signup" style="width: 100%; justify-content: center; padding: 1rem; font-size: 1.2rem;">Place Order Now <i class="fa-solid fa-lock" style="margin-left: 0.5rem;"></i></button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 style="color: var(--white);"><i class="fa-solid fa-baby-carriage" style="color: var(--primary);"></i> NurturaNest</h3>
+                <p>Bringing you the most beautiful and outstanding mother & baby care products. Built with love and affection.</p>
+                <div class="socials">
+                    <a href="https://wa.me/233537479080"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="order.html">Order Status</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="products.html#baby-care-kits">Baby Care Kits</a></li>
+                    <li><a href="products.html#feeding-bath">Feeding & Bath</a></li>
+                    <li><a href="products.html#clothes-shoes">Clothes & Shoes</a></li>
+                    <li><a href="products.html#nursery-beds">Nursery Beds</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NurturaNest Mother & Baby Care. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

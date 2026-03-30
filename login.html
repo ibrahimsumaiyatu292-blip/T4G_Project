@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | NurturaNest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: var(--bg-color);">
+
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-baby-carriage"></i> NurturaNest
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn btn-login active">Login</a>
+                <a href="signup.html" class="btn btn-signup">Sign Up</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="auth-container">
+        <div class="form-wrapper">
+            <!-- Changing order here for variety so image is right, form left -->
+            <div class="form-content" style="order: 2;">
+                <h2>Welcome <span>Back</span></h2>
+                <p>Log in to access your beautiful baby wishlist and orders.</p>
+                
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Logged in successfully!'); window.location.href='index.html';">
+                    
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="example@heart.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="input-group" style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <input type="checkbox" id="remember" style="width: auto; height: auto;" checked>
+                            <label for="remember" style="margin: 0; font-size: 0.9rem;">Remember me</label>
+                        </div>
+                        <a href="javascript:alert('Password reset link sent to your email!');" style="font-size: 0.9rem; color: var(--secondary); font-weight: 600;">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="background: var(--primary); color: var(--white); width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem; border-radius: var(--radius-sm); border: none; font-weight: 700; margin-top: 1rem; box-shadow: var(--shadow-sm); cursor: pointer; transition: all 0.3s ease;">
+                        Log In Securely <i class="fa-solid fa-right-to-bracket" style="margin-left: 0.5rem;"></i>
+                    </button>
+                    
+                    <div class="form-footer">
+                        New around here? <a href="signup.html" style="color: var(--secondary);">Create an Account</a>
+                    </div>
+                </form>
+            </div>
+            <div class="form-image" style="background-image: url('images/our tam.jpg'); order: 1;"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

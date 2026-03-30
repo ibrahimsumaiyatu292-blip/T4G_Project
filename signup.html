@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | NurturaNest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: var(--bg-color);">
+
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-baby-carriage"></i> NurturaNest
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn btn-login">Login</a>
+                <a href="signup.html" class="btn btn-signup">Sign Up</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="auth-container">
+        <div class="form-wrapper">
+            <div class="form-image" style="background-image: url('images/regnant woman.jpg'); background-position: top center;"></div>
+            <div class="form-content">
+                <h2>Join Our <span>Family</span></h2>
+                <p>Sign up today and give your lovely baby the care they truly deserve.</p>
+                
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Account created successfully! Welcome to NurturaNest.'); window.location.href='index.html';">
+                    
+                    <div class="input-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" placeholder="Mama's Name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="example@heart.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Create a strong password" required>
+                    </div>
+
+                    <div class="input-group" style="display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">
+                        <input type="checkbox" id="terms" style="width: auto; height: auto; transform: scale(1.2);" required>
+                        <label for="terms" style="margin: 0; font-weight: 500; font-size: 0.9rem;">I agree to the <a href="#" style="color: var(--primary);">Terms & Conditions</a></label>
+                    </div>
+
+                    <button type="submit" class="btn btn-signup" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem; margin-top: 1rem;">
+                        Create Account <i class="fa-solid fa-user-plus" style="margin-left: 0.5rem;"></i>
+                    </button>
+                    
+                    <div class="form-footer">
+                        Already part of our family? <a href="login.html">Log In Here</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
